@@ -69,22 +69,34 @@ nav a {
 	vertical-align: top;
     display: flex;
 	text-align: center;
+	justify-content: space-around;
 	padding-top: 10px;
-    width: 11%;
+	width: 11%;
+	
     /* margin-right: 50px;
     margin-left: 60px; */
 }
+.tabletview1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+}
 nav {
     text-align: center;
-    display: flex;
+	display: flex;
+	flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+	justify-content:space-around ;
+	margin: 0 10%;
+	
 }
-.logo {
+.imglogo {
 	display: flex;
 	/* vertical-align: middle; */
 	padding: 10px; 
-    text-align: center;
+	text-align: center;
+	margin: 0 3% 0 0;
 }
 h1 {
     text-align: center;
@@ -181,32 +193,44 @@ body {
     flex-flow: row nowrap;
 }
 
-@media (max-width:800px){
-	body{
 
-	max-width: 800px;
-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px){
+	
+
 	.getItCentered{
 		display: flex;
 		flex-direction: column-reverse;
-		
+		margin: ;
+	}	
 
-	}
 	.tabletview1{
 		display: flex;
 		flex-direction: row;
-		margin: auto;
-		width: 100%;
-		justify-content: center;
+		margin:auto;
+		justify-content: space-evenly;
 	}
 	nav a {
 		order: 1;
 		text-decoration: none;
 		color: lightgray; 
 		/* vertical-align: top; */
-		justify-content: center;
 		text-align: center;
-		width: 20%;
+		
 		
 		/* margin-right: 50px;
 		margin-left: 60px; */
@@ -217,7 +241,7 @@ body {
 		display: flex;
 		flex-direction:row;
 		width: 800px;
-		margin: auto;
+		margin:0 200px 0 0;
 		
 	}
 	.logo {
@@ -226,100 +250,73 @@ body {
 		/* vertical-align: middle; */
 		max-width: 200px;
 		vertical-align: top;
-		margin: auto;
+		justify-content: center;
+		margin:0 0 0 300px;
 	}
 	.topsection-text{
 		display:flex;
-		justify-content: center;
 		height: 40vh;
+		justify-content: center;
+	 
 	}
+	header {
+		margin-left: 100px;
+		vertical-align: middle;
+		margin: 0 0 0 100px;
+	}
+
+	.middle-img {
+		width: 800px;
+		box-align: center; 
+		padding-top: 20px;}
 
 	.headerImage{
 		display: none;
 	}
 
-
-@media (max-width:500px){
-	body{
-
-		max-width: 500px;
-		}
-
-.headerImage{
-		display: none;
-	}
-
-
-	.getItCentered{
+	.top-content {
+		border-top: 2px solid black;
 		display: flex;
-		margin: auto;
-		width: 500px;
+		/* flex-wrap: wrap;
+		flex-flow: row nowrap;  */
+		flex-direction: row;
+		width: 800px;
 	}
-	.tabletview1{
-		display: flex;
-		flex-direction: column;
-		width: 500px;
-		
 	
-	}
-	nav a {
-		order: 1;
-		text-decoration: none;
-		font-size: 30px;
-		color: lightgray; 
-		/* vertical-align: top; */
-		width: 500px;
-		margin: auto;
-		padding: 5% 0;
-		display: flex;
-		/* margin-right: 50px;
-		margin-left: 60px; */
-	}
-	nav{
-		max-width: 500px;
-	}
-	.logo{
-		order: 0;
-		display: flex;
-		/* vertical-align: middle; */
-		max-width:500px;
-		vertical-align: top;
-		margin: auto;
-	
-	}
-	.imglogo{
-		border-bottom: 1px solid black;
-	}
-	header{
-		display: flex;
-		padding:10% 30% 10% 0;
-		margin: 0 30% 0 0;
-		max-width: 500px; 
-	}
-	.topsection-text{
-		display:flex;
-		margin:auto;
-		justify-content: center;
-		
-		height: 40vh;
-		max-width: 500px;
-	}
-	.one11{
-		border-bottom: 1px solid black;
-	}
-}
-.top-content{
+	.features,
+.about {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2%;
+	width: 100%;
+}
+.bottom-content {
+    border-bottom: 2px solid black;
+    display: flex;
+	flex-flow: row ;
+	width: 800px;
+}
+.services, .product ,.vision
+{display: flex;
+    flex-wrap: wrap;
+	width: 30%;
 }
 
-.bottom-content{
-	display: flex;
-	flex-direction: column;
+.copyright{
+	margin: 0 400px 0 0;
 }
 
-.features,.about,.services,.product,.vision,.contact,footer{
 
-	margin: 10% 0;
-}
+
+
+
+
+
+
+
+
+
+
+
 
