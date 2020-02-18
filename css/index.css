@@ -193,22 +193,6 @@ body {
     flex-flow: row nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:800px){
 	
 
@@ -300,7 +284,7 @@ body {
 .services, .product ,.vision
 {display: flex;
     flex-wrap: wrap;
-	width: 30%;
+	width: 35%;
 }
 
 .copyright{
@@ -308,15 +292,16 @@ body {
 }
 
 
+@media (max-width:500px){
+
+	nav a{
+		display:flex;
+		flex-direction: column;
+	}
 
 
 
 
 
 
-
-
-
-
-
-
+}
