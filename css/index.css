@@ -76,12 +76,7 @@ nav a {
     /* margin-right: 50px;
     margin-left: 60px; */
 }
-.tabletview1{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-}
+
 nav {
     text-align: center;
 	display: flex;
@@ -112,9 +107,10 @@ button {
     display: flex;  
 	background-color: white;
     border: 1px solid black;
-    height: 40px;
-    margin-top: 55%;
-    margin-left: -50%;
+	height: 40px;
+	width: 200px;
+    /* margin-top: 55%;
+    margin-left: -50%; */
 }
 h2 {
     font-size: 25px;
@@ -131,6 +127,8 @@ h2 {
 }
 .topsection-text {
 	display: flex; 
+		flex-direction: column;
+		align-items: center;
 	text-align: center; 
 	vertical-align: top;
 	margin-top: 110px;
@@ -195,20 +193,13 @@ body {
 
 @media (max-width:800px){
 	body{
-		width: 800px;
+		width: 100%;
 	}
 
 	.getItCentered{
 		flex-direction: column-reverse;
-		margin: ;
-	}	
 
-	.tabletview1{
-		display: flex;
-		flex-direction: row;
-		margin:auto;
-		justify-content: space-evenly;
-	}
+	}	
 	nav a {
 		order: 1;
 		text-decoration: none;
@@ -221,8 +212,6 @@ body {
 		margin-left: 60px; */
 	}
 	nav {
-
-		text-align:;
 		display: flex;
 		flex-direction:row;
 		width: 100%;
@@ -239,15 +228,19 @@ body {
 		margin:0 0 0 37.5%;
 	}
 	.topsection-text{
-		height: 40vh;
+		/* height: 40vh; */
 		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	 
 	}
 	header {
-		margin-left: 12.5%;
-		vertical-align: middle;
-		margin: 0 0 0 12.5
-		;
+		padding-bottom: 50px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0;
 	}
 
 	.middle-img {
@@ -294,14 +287,70 @@ body {
 
 @media (max-width:500px){
 
+	.getItCentered{
+		flex-direction: column-reverse;
+	}
+
+	nav{
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		border-top: 1px solid grey;
+	}
+
 	nav a{
-		display:flex;
+		border-bottom: 1px solid grey;
+		width: 100%;
+		padding-bottom: 20px; 
+		
+	}
+
+	.logo{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.imglogo{
+		width:100%;
+	}
+
+	.topsection{
+		width: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.topsection-text{
+
+		margin-top: 20px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	h1{
+		
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.top-content{
+		width: 100%;
+		display: flex;
 		flex-direction: column;
 	}
 
+	.bottom-content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
 
-
-
-
+	.copyright{
+		width: 100%;
+	}
 
 }
